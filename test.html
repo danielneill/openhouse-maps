@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22794662279dc748e1d575bb5dfdd220 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22794662279dc748e1d575bb5dfdd220" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22794662279dc748e1d575bb5dfdd220 = L.map(
+                "map_22794662279dc748e1d575bb5dfdd220",
+                {
+                    center: [45.49532, -122.928957],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_410f04970ebf1d75cbdcb4093663baea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_410f04970ebf1d75cbdcb4093663baea.addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+            map_22794662279dc748e1d575bb5dfdd220.fitBounds(
+                [[45.49532, -122.928957], [45.494964, -122.929387], [45.491035, -122.893669], [45.491062, -122.893982], [45.605881, -122.923196]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_673634f20e854b55dc18f093f367722c = L.marker(
+                [45.49532, -122.928957],
+                {
+}
+            ).addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+        var popup_24d83fad51419c4e6b4a458b6dd0dfff = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_534a5939560e6c633ff2e73725a6d83c = $(`<div id="html_534a5939560e6c633ff2e73725a6d83c" style="width: 100.0%; height: 100.0%;"><b>[10] 3373 SE Everwood Ln, Hillsboro</b><br>Open: Mon 10 Aug 11:00AM-4:00PM; Tue 11 Aug 11:00AM-4:00PM<br>lot 871 sqft · built 2025 · $419,500<br>covered patio, deck, porch<br><a href="https://www.realtor.com/realestateandhomes-detail/3373-SE-Everwood-Ln_Hillsboro_OR_97123_M98208-43490" target="_blank">listing</a></div>`)[0];
+                popup_24d83fad51419c4e6b4a458b6dd0dfff.setContent(html_534a5939560e6c633ff2e73725a6d83c);
+            
+        
+
+        marker_673634f20e854b55dc18f093f367722c.bindPopup(popup_24d83fad51419c4e6b4a458b6dd0dfff)
+        ;
+
+        
+    
+    
+            marker_673634f20e854b55dc18f093f367722c.bindTooltip(
+                `<div>
+                     [10] 3373 SE Everwood Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83d32c5b0ebf01c1f8f5cf73d9da60f3 = L.marker(
+                [45.494964, -122.929387],
+                {
+}
+            ).addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+        var popup_24316c9339c23969f0e61c275a0d24f1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_cbd333be6d32e9d2ad20cba06e757fc0 = $(`<div id="html_cbd333be6d32e9d2ad20cba06e757fc0" style="width: 100.0%; height: 100.0%;"><b>[9] 3445 SE Everwood Ln, Hillsboro</b><br>Open: Mon 10 Aug 11:00AM-4:00PM; Tue 11 Aug 11:00AM-4:00PM<br>lot 2,178 sqft · built 2026 · $489,500<br>covered patio, deck<br><a href="https://www.realtor.com/realestateandhomes-detail/3445-SE-Everwood-Ln_Hillsboro_OR_97123_M98447-58366" target="_blank">listing</a></div>`)[0];
+                popup_24316c9339c23969f0e61c275a0d24f1.setContent(html_cbd333be6d32e9d2ad20cba06e757fc0);
+            
+        
+
+        marker_83d32c5b0ebf01c1f8f5cf73d9da60f3.bindPopup(popup_24316c9339c23969f0e61c275a0d24f1)
+        ;
+
+        
+    
+    
+            marker_83d32c5b0ebf01c1f8f5cf73d9da60f3.bindTooltip(
+                `<div>
+                     [9] 3445 SE Everwood Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_25bc22dd08bebf5aba5b0030d6d2331a = L.marker(
+                [45.491035, -122.893669],
+                {
+}
+            ).addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+        var popup_9bf2d61a27fee65ee6e74cb0151e4ebf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ef278b08b62a824a86b6a0e92775b946 = $(`<div id="html_ef278b08b62a824a86b6a0e92775b946" style="width: 100.0%; height: 100.0%;"><b>[7] 8560 SE Bobcat Ln, Hillsboro</b><br>Open: Mon 10 Aug 10:00AM-6:00PM; Tue 11 Aug 10:00AM-6:00PM; Wed 12 Aug 10:00AM-6:00PM<br>built 2026 · $699,960<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/8560-SE-Bobcat-Ln_Hillsboro_OR_97123_M95428-97644" target="_blank">listing</a></div>`)[0];
+                popup_9bf2d61a27fee65ee6e74cb0151e4ebf.setContent(html_ef278b08b62a824a86b6a0e92775b946);
+            
+        
+
+        marker_25bc22dd08bebf5aba5b0030d6d2331a.bindPopup(popup_9bf2d61a27fee65ee6e74cb0151e4ebf)
+        ;
+
+        
+    
+    
+            marker_25bc22dd08bebf5aba5b0030d6d2331a.bindTooltip(
+                `<div>
+                     [7] 8560 SE Bobcat Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e21269318b0913210b320e5722b72bdd = L.marker(
+                [45.491062, -122.893982],
+                {
+}
+            ).addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+        var popup_76a79888be3609069c492b59eb3d6242 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a8ee805da6bb289d6a83e4b230766733 = $(`<div id="html_a8ee805da6bb289d6a83e4b230766733" style="width: 100.0%; height: 100.0%;"><b>[7] 8532 SE Bobcat Ln, Hillsboro</b><br>Open: Mon 10 Aug 10:00AM-6:00PM; Tue 11 Aug 10:00AM-6:00PM; Wed 12 Aug 10:00AM-6:00PM<br>built 2026 · $699,960<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/8532-SE-Bobcat-Ln_Hillsboro_OR_97123_M90228-97516" target="_blank">listing</a></div>`)[0];
+                popup_76a79888be3609069c492b59eb3d6242.setContent(html_a8ee805da6bb289d6a83e4b230766733);
+            
+        
+
+        marker_e21269318b0913210b320e5722b72bdd.bindPopup(popup_76a79888be3609069c492b59eb3d6242)
+        ;
+
+        
+    
+    
+            marker_e21269318b0913210b320e5722b72bdd.bindTooltip(
+                `<div>
+                     [7] 8532 SE Bobcat Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce2d19dcc60766ca8167737162270da9 = L.marker(
+                [45.605881, -122.923196],
+                {
+}
+            ).addTo(map_22794662279dc748e1d575bb5dfdd220);
+        
+    
+        var popup_7d09037ce12ab8741e81c59581ee3b40 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7a7b111824e8831b6ee91c229b29e4d6 = $(`<div id="html_7a7b111824e8831b6ee91c229b29e4d6" style="width: 100.0%; height: 100.0%;"><b>[5] 11113 NW Helvetia Rd, Hillsboro</b><br>Open: Tue 11 Aug 11:00AM-2:00PM<br>lot 87,120 sqft · built 2023 · $2,650,000<br>firepit, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/11113-NW-Helvetia-Rd_Hillsboro_OR_97124_M96934-18100" target="_blank">listing</a></div>`)[0];
+                popup_7d09037ce12ab8741e81c59581ee3b40.setContent(html_7a7b111824e8831b6ee91c229b29e4d6);
+            
+        
+
+        marker_ce2d19dcc60766ca8167737162270da9.bindPopup(popup_7d09037ce12ab8741e81c59581ee3b40)
+        ;
+
+        
+    
+    
+            marker_ce2d19dcc60766ca8167737162270da9.bindTooltip(
+                `<div>
+                     [5] 11113 NW Helvetia Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
