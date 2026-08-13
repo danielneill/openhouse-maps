@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_defe0837f3012c686aaf89ec7d313b44 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_defe0837f3012c686aaf89ec7d313b44" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_defe0837f3012c686aaf89ec7d313b44 = L.map(
+                "map_defe0837f3012c686aaf89ec7d313b44",
+                {
+                    center: [45.405101, -123.046464],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a113a94d8fb545dae9136d7502ec15e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4a113a94d8fb545dae9136d7502ec15e.addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+            map_defe0837f3012c686aaf89ec7d313b44.fitBounds(
+                [[45.405101, -123.046464], [45.544947, -122.989193], [45.491035, -122.893669], [45.523115, -122.994298], [45.449102, -122.989676], [45.523157, -122.887938], [45.398462, -123.048364], [45.538997, -122.978622], [45.515112, -122.96486], [45.507661, -122.975415], [45.509639, -122.97458], [45.511295, -122.960516], [45.534893, -122.891126], [45.531904, -122.983477]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_bcbef3ea495563082a338904403779a0 = L.marker(
+                [45.405101, -123.046464],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_db89b77de3cb927ddf410ba26b7e98aa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bde93d9910f45645a659d6b625b8127d = $(`<div id="html_bde93d9910f45645a659d6b625b8127d" style="width: 100.0%; height: 100.0%;"><b>[14] 35890 SW Orchid Hill Ln, Hillsboro</b><br>Open: Fri 14 Aug 4:00PM-6:00PM<br>lot 204,732 sqft · built 1999 · $1,299,999<br>covered patio, deck, patio, porch, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/35890-SW-Orchid-Hill-Ln_Hillsboro_OR_97123_M21555-74449" target="_blank">listing</a></div>`)[0];
+                popup_db89b77de3cb927ddf410ba26b7e98aa.setContent(html_bde93d9910f45645a659d6b625b8127d);
+            
+        
+
+        marker_bcbef3ea495563082a338904403779a0.bindPopup(popup_db89b77de3cb927ddf410ba26b7e98aa)
+        ;
+
+        
+    
+    
+            marker_bcbef3ea495563082a338904403779a0.bindTooltip(
+                `<div>
+                     [14] 35890 SW Orchid Hill Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_02a7cb52237667dd77a98bd19adaeb3d = L.marker(
+                [45.544947, -122.989193],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_e9ba94bd55e3bf01be78329305eb98a7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ba919646ee0086825bb286d96c6a287c = $(`<div id="html_ba919646ee0086825bb286d96c6a287c" style="width: 100.0%; height: 100.0%;"><b>[11] 2665 NE 3rd Ct, Hillsboro</b><br>Open: Sat 15 Aug 11:00AM-1:00PM<br>lot 9,148 sqft · built 1995 · $785,000<br>covered patio, deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/2665-NE-3rd-Ct_Hillsboro_OR_97124_M15067-79221" target="_blank">listing</a></div>`)[0];
+                popup_e9ba94bd55e3bf01be78329305eb98a7.setContent(html_ba919646ee0086825bb286d96c6a287c);
+            
+        
+
+        marker_02a7cb52237667dd77a98bd19adaeb3d.bindPopup(popup_e9ba94bd55e3bf01be78329305eb98a7)
+        ;
+
+        
+    
+    
+            marker_02a7cb52237667dd77a98bd19adaeb3d.bindTooltip(
+                `<div>
+                     [11] 2665 NE 3rd Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5997d29a63ff8065e6774dbf53839e2a = L.marker(
+                [45.491035, -122.893669],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_95e72eb990a57b58bd56c28bdc21ff76 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_89d31d91f391b08f2817c359febd5d4b = $(`<div id="html_89d31d91f391b08f2817c359febd5d4b" style="width: 100.0%; height: 100.0%;"><b>[7] 8560 SE Bobcat Ln, Hillsboro</b><br>Open: Thu 13 Aug 10:00AM-6:00PM; Fri 14 Aug 10:00AM-6:00PM<br>built 2026 · $699,960<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/8560-SE-Bobcat-Ln_Hillsboro_OR_97123_M95428-97644" target="_blank">listing</a></div>`)[0];
+                popup_95e72eb990a57b58bd56c28bdc21ff76.setContent(html_89d31d91f391b08f2817c359febd5d4b);
+            
+        
+
+        marker_5997d29a63ff8065e6774dbf53839e2a.bindPopup(popup_95e72eb990a57b58bd56c28bdc21ff76)
+        ;
+
+        
+    
+    
+            marker_5997d29a63ff8065e6774dbf53839e2a.bindTooltip(
+                `<div>
+                     [7] 8560 SE Bobcat Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_70aa1b74b6d932476e7b0a7b441b49db = L.marker(
+                [45.523115, -122.994298],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_9a93258b481cfcd3d300317d1bbca902 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5d6606ddae3d8f3d24b5943b9af2b23e = $(`<div id="html_5d6606ddae3d8f3d24b5943b9af2b23e" style="width: 100.0%; height: 100.0%;"><b>[7] 129 NW Connell Ave, Hillsboro</b><br>Open: Sat 15 Aug 10:00AM-12:00PM<br>lot 3,485 sqft · built 2014 · $489,000<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/129-NW-Connell-Ave_Hillsboro_OR_97124_M11594-50180" target="_blank">listing</a></div>`)[0];
+                popup_9a93258b481cfcd3d300317d1bbca902.setContent(html_5d6606ddae3d8f3d24b5943b9af2b23e);
+            
+        
+
+        marker_70aa1b74b6d932476e7b0a7b441b49db.bindPopup(popup_9a93258b481cfcd3d300317d1bbca902)
+        ;
+
+        
+    
+    
+            marker_70aa1b74b6d932476e7b0a7b441b49db.bindTooltip(
+                `<div>
+                     [7] 129 NW Connell Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4135a5e36a095f0ad23b3f3ae160670b = L.marker(
+                [45.449102, -122.989676],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_dc4fe48563793385f6213f03178905de = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a37f926ee00480290770a681b6950df1 = $(`<div id="html_a37f926ee00480290770a681b6950df1" style="width: 100.0%; height: 100.0%;"><b>[7] 9800 SW Hillsboro Hwy, Hillsboro</b><br>Open: Sat 15 Aug 1:00PM-3:00PM<br>lot 20,473 sqft · built 1950 · $615,000<br>deck, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/9800-SW-Hillsboro-Hwy_Hillsboro_OR_97123_M91687-71137" target="_blank">listing</a></div>`)[0];
+                popup_dc4fe48563793385f6213f03178905de.setContent(html_a37f926ee00480290770a681b6950df1);
+            
+        
+
+        marker_4135a5e36a095f0ad23b3f3ae160670b.bindPopup(popup_dc4fe48563793385f6213f03178905de)
+        ;
+
+        
+    
+    
+            marker_4135a5e36a095f0ad23b3f3ae160670b.bindTooltip(
+                `<div>
+                     [7] 9800 SW Hillsboro Hwy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bae71e7bf67ca5f93d9f0d37f731ba95 = L.marker(
+                [45.523157, -122.887938],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_3c085665ae1314d7e5a4cd056f3e83a9 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b5f17c940040a891c2ae862b0f82ea29 = $(`<div id="html_b5f17c940040a891c2ae862b0f82ea29" style="width: 100.0%; height: 100.0%;"><b>[7] 8906 NE Brentford Way, Hillsboro</b><br>Open: Sun 16 Aug 1:00PM-3:00PM<br>built 2007 · $229,900<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/8906-NE-Brentford-Way_Hillsboro_OR_97006_M25376-42134" target="_blank">listing</a></div>`)[0];
+                popup_3c085665ae1314d7e5a4cd056f3e83a9.setContent(html_b5f17c940040a891c2ae862b0f82ea29);
+            
+        
+
+        marker_bae71e7bf67ca5f93d9f0d37f731ba95.bindPopup(popup_3c085665ae1314d7e5a4cd056f3e83a9)
+        ;
+
+        
+    
+    
+            marker_bae71e7bf67ca5f93d9f0d37f731ba95.bindTooltip(
+                `<div>
+                     [7] 8906 NE Brentford Way
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5317ce03789ecfdfc4e37b237c15a61 = L.marker(
+                [45.398462, -123.048364],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_434b907592f467e1a835b38837a19500 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c358a89b75c238be58bf30ab3d759261 = $(`<div id="html_c358a89b75c238be58bf30ab3d759261" style="width: 100.0%; height: 100.0%;"><b>[7] 18200 NE Sunrise Peaks Ln, Hillsboro</b><br>Open: Sun 16 Aug 2:00PM-4:00PM<br>lot 249,599 sqft · built 2000 · $2,150,000<br>firepit, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/18200-NE-Sunrise-Peaks-Ln_Hillsboro_OR_97123_M21903-78486" target="_blank">listing</a></div>`)[0];
+                popup_434b907592f467e1a835b38837a19500.setContent(html_c358a89b75c238be58bf30ab3d759261);
+            
+        
+
+        marker_f5317ce03789ecfdfc4e37b237c15a61.bindPopup(popup_434b907592f467e1a835b38837a19500)
+        ;
+
+        
+    
+    
+            marker_f5317ce03789ecfdfc4e37b237c15a61.bindTooltip(
+                `<div>
+                     [7] 18200 NE Sunrise Peaks Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9f2b17396f5b40e51a7f334984801534 = L.marker(
+                [45.538997, -122.978622],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_afaaa64c207ec29eb5504d49f6399b57 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_74e110fd19b1ae0c3f603dee984dde07 = $(`<div id="html_74e110fd19b1ae0c3f603dee984dde07" style="width: 100.0%; height: 100.0%;"><b>[6] 1915 NE Harewood Pl, Hillsboro</b><br>Open: Fri 14 Aug 4:30PM-6:30PM; Sat 15 Aug 1:00PM-3:00PM<br>lot 4,356 sqft · built 1995 · $525,000<br>deck, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/1915-NE-Harewood-Pl_Hillsboro_OR_97124_M28802-07492" target="_blank">listing</a></div>`)[0];
+                popup_afaaa64c207ec29eb5504d49f6399b57.setContent(html_74e110fd19b1ae0c3f603dee984dde07);
+            
+        
+
+        marker_9f2b17396f5b40e51a7f334984801534.bindPopup(popup_afaaa64c207ec29eb5504d49f6399b57)
+        ;
+
+        
+    
+    
+            marker_9f2b17396f5b40e51a7f334984801534.bindTooltip(
+                `<div>
+                     [6] 1915 NE Harewood Pl
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48e5a731f5d7821ee43727dffe9abf90 = L.marker(
+                [45.515112, -122.96486],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_9e9fa224d9e08eb41be811d2bb81f1b7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f4f53aacc7b8b88c9658d07831552ab3 = $(`<div id="html_f4f53aacc7b8b88c9658d07831552ab3" style="width: 100.0%; height: 100.0%;"><b>[6] 1730 SE Maple Ct, Hillsboro</b><br>Open: Sat 15 Aug 2:00PM-4:00PM<br>lot 8,276 sqft · built 1945 · $450,000<br>firepit, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/1730-SE-Maple-Ct_Hillsboro_OR_97123_M13387-56716" target="_blank">listing</a></div>`)[0];
+                popup_9e9fa224d9e08eb41be811d2bb81f1b7.setContent(html_f4f53aacc7b8b88c9658d07831552ab3);
+            
+        
+
+        marker_48e5a731f5d7821ee43727dffe9abf90.bindPopup(popup_9e9fa224d9e08eb41be811d2bb81f1b7)
+        ;
+
+        
+    
+    
+            marker_48e5a731f5d7821ee43727dffe9abf90.bindTooltip(
+                `<div>
+                     [6] 1730 SE Maple Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83caa45f4efe440e71dc6ac59f37b8f4 = L.marker(
+                [45.507661, -122.975415],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_7fb287571e7a82fe112b8bc65dfbfe05 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2e0013a9bf883973135bf890c9d33f59 = $(`<div id="html_2e0013a9bf883973135bf890c9d33f59" style="width: 100.0%; height: 100.0%;"><b>[6] 979 SE Roundelay St, Hillsboro</b><br>Open: Sun 16 Aug 1:00PM-3:00PM<br>lot 3,049 sqft · built 2005 · $485,000<br>hot tub, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/979-SE-Roundelay-St_Hillsboro_OR_97123_M20061-37593" target="_blank">listing</a></div>`)[0];
+                popup_7fb287571e7a82fe112b8bc65dfbfe05.setContent(html_2e0013a9bf883973135bf890c9d33f59);
+            
+        
+
+        marker_83caa45f4efe440e71dc6ac59f37b8f4.bindPopup(popup_7fb287571e7a82fe112b8bc65dfbfe05)
+        ;
+
+        
+    
+    
+            marker_83caa45f4efe440e71dc6ac59f37b8f4.bindTooltip(
+                `<div>
+                     [6] 979 SE Roundelay St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bb4af81e04bf598b0fa8d7127efc040 = L.marker(
+                [45.509639, -122.97458],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_5444d66b9e206a4dea4e96235f324b1f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c8f88098daabbe7222d2c799135c5b53 = $(`<div id="html_c8f88098daabbe7222d2c799135c5b53" style="width: 100.0%; height: 100.0%;"><b>[5] 1062 SE Tamango St, Hillsboro</b><br>Open: Sun 16 Aug 11:00AM-1:00PM<br>lot 2,178 sqft · built 2004 · $449,900<br>hot tub, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/1062-SE-Tamango-St_Hillsboro_OR_97123_M23188-96127" target="_blank">listing</a></div>`)[0];
+                popup_5444d66b9e206a4dea4e96235f324b1f.setContent(html_c8f88098daabbe7222d2c799135c5b53);
+            
+        
+
+        marker_1bb4af81e04bf598b0fa8d7127efc040.bindPopup(popup_5444d66b9e206a4dea4e96235f324b1f)
+        ;
+
+        
+    
+    
+            marker_1bb4af81e04bf598b0fa8d7127efc040.bindTooltip(
+                `<div>
+                     [5] 1062 SE Tamango St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f485020e0d276aa897d92c827e18bb1d = L.marker(
+                [45.511295, -122.960516],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_91ac7a1ee857fa48dbe159868b92d7da = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e2d4cf2e4cb19d3c96ff030f25fe166d = $(`<div id="html_e2d4cf2e4cb19d3c96ff030f25fe166d" style="width: 100.0%; height: 100.0%;"><b>[5] 2160 SE Cedar Park Ct, Hillsboro</b><br>Open: Sun 16 Aug 2:00PM-4:00PM<br>lot 6,534 sqft · built 1961 · $549,500<br>deck, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/2160-SE-Cedar-Park-Ct_Hillsboro_OR_97123_M16237-00856" target="_blank">listing</a></div>`)[0];
+                popup_91ac7a1ee857fa48dbe159868b92d7da.setContent(html_e2d4cf2e4cb19d3c96ff030f25fe166d);
+            
+        
+
+        marker_f485020e0d276aa897d92c827e18bb1d.bindPopup(popup_91ac7a1ee857fa48dbe159868b92d7da)
+        ;
+
+        
+    
+    
+            marker_f485020e0d276aa897d92c827e18bb1d.bindTooltip(
+                `<div>
+                     [5] 2160 SE Cedar Park Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f0d167cb56778b211b4a06f9e2dc4737 = L.marker(
+                [45.534893, -122.891126],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_4e6fbe8c2a134bfc630b5bb19cf04435 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c3f2fa95a339f021faa37118b7101783 = $(`<div id="html_c3f2fa95a339f021faa37118b7101783" style="width: 100.0%; height: 100.0%;"><b>[4] 2137 NE Sheffield Ave, Hillsboro</b><br>Open: Sun 16 Aug 12:00PM-2:00PM<br>lot 1,307 sqft · built 2005 · $403,950<br>deck<br><a href="https://www.realtor.com/realestateandhomes-detail/2137-NE-Sheffield-Ave_Hillsboro_OR_97006_M27801-91600" target="_blank">listing</a></div>`)[0];
+                popup_4e6fbe8c2a134bfc630b5bb19cf04435.setContent(html_c3f2fa95a339f021faa37118b7101783);
+            
+        
+
+        marker_f0d167cb56778b211b4a06f9e2dc4737.bindPopup(popup_4e6fbe8c2a134bfc630b5bb19cf04435)
+        ;
+
+        
+    
+    
+            marker_f0d167cb56778b211b4a06f9e2dc4737.bindTooltip(
+                `<div>
+                     [4] 2137 NE Sheffield Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ed43d936955f7198be5cd02ec9506d0 = L.marker(
+                [45.531904, -122.983477],
+                {
+}
+            ).addTo(map_defe0837f3012c686aaf89ec7d313b44);
+        
+    
+        var popup_315a48b23ed3c82d7d9805f4c4b142e7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8d14495e7d0a8cb5df3b51439a06bc47 = $(`<div id="html_8d14495e7d0a8cb5df3b51439a06bc47" style="width: 100.0%; height: 100.0%;"><b>[4] 987 NE 5th Dr, Hillsboro</b><br>Open: Sun 16 Aug 3:00PM-5:00PM<br>lot 10,019 sqft · built 1976 · $615,000<br>patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/987-NE-5th-Dr_Hillsboro_OR_97124_M26301-92513" target="_blank">listing</a></div>`)[0];
+                popup_315a48b23ed3c82d7d9805f4c4b142e7.setContent(html_8d14495e7d0a8cb5df3b51439a06bc47);
+            
+        
+
+        marker_9ed43d936955f7198be5cd02ec9506d0.bindPopup(popup_315a48b23ed3c82d7d9805f4c4b142e7)
+        ;
+
+        
+    
+    
+            marker_9ed43d936955f7198be5cd02ec9506d0.bindTooltip(
+                `<div>
+                     [4] 987 NE 5th Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
