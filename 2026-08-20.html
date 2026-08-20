@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84d816ac523f71f061bcd576f8a98935 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_84d816ac523f71f061bcd576f8a98935" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_84d816ac523f71f061bcd576f8a98935 = L.map(
+                "map_84d816ac523f71f061bcd576f8a98935",
+                {
+                    center: [45.405101, -123.046464],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf618b23bcebe47c49a585ac06593c9f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bf618b23bcebe47c49a585ac06593c9f.addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+            map_84d816ac523f71f061bcd576f8a98935.fitBounds(
+                [[45.405101, -123.046464], [45.539487, -122.992958], [45.490287, -122.908446], [45.49532, -122.928957], [45.494964, -122.929387], [45.48024, -122.898292], [45.510379, -122.977241], [45.53894, -122.996906], [45.449102, -122.989676], [45.534575, -122.920649], [45.53281, -122.994781], [45.537831, -122.916548], [45.502213, -122.929127]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_e49e0a4629ecc7d0a80d451730a4bc0f = L.marker(
+                [45.405101, -123.046464],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_c1c8d858b71cb552639a9b5698f927b7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8b47b39eab47308d6a93341c76c481ea = $(`<div id="html_8b47b39eab47308d6a93341c76c481ea" style="width: 100.0%; height: 100.0%;"><b>[14] 35890 SW Orchid Hill Ln, Hillsboro</b><br>Open: Sat 29 Aug 12:00PM-3:00PM<br>lot 204,732 sqft · built 1999 · $1,299,999<br>covered patio, deck, patio, porch, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/35890-SW-Orchid-Hill-Ln_Hillsboro_OR_97123_M21555-74449" target="_blank">listing</a></div>`)[0];
+                popup_c1c8d858b71cb552639a9b5698f927b7.setContent(html_8b47b39eab47308d6a93341c76c481ea);
+            
+        
+
+        marker_e49e0a4629ecc7d0a80d451730a4bc0f.bindPopup(popup_c1c8d858b71cb552639a9b5698f927b7)
+        ;
+
+        
+    
+    
+            marker_e49e0a4629ecc7d0a80d451730a4bc0f.bindTooltip(
+                `<div>
+                     [14] 35890 SW Orchid Hill Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_efe5b6f0268a7a23dc67db875e83a89b = L.marker(
+                [45.539487, -122.992958],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_6708cc92b89031abb2267b49b149a131 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9a7b36d83ae60300bef8d3231385b2d6 = $(`<div id="html_9a7b36d83ae60300bef8d3231385b2d6" style="width: 100.0%; height: 100.0%;"><b>[13] 165 NE Cory St, Hillsboro</b><br>Open: Sat 22 Aug 12:00PM-2:00PM; Sun 23 Aug 12:00PM-2:00PM<br>lot 6,970 sqft · built 1994 · $535,000<br>covered patio, deck, patio, fenced yard, porch<br><a href="https://www.realtor.com/realestateandhomes-detail/165-NE-Cory-St_Hillsboro_OR_97124_M19123-62327" target="_blank">listing</a></div>`)[0];
+                popup_6708cc92b89031abb2267b49b149a131.setContent(html_9a7b36d83ae60300bef8d3231385b2d6);
+            
+        
+
+        marker_efe5b6f0268a7a23dc67db875e83a89b.bindPopup(popup_6708cc92b89031abb2267b49b149a131)
+        ;
+
+        
+    
+    
+            marker_efe5b6f0268a7a23dc67db875e83a89b.bindTooltip(
+                `<div>
+                     [13] 165 NE Cory St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c9f6bbb5e9648cd7cf167047ab5fd12 = L.marker(
+                [45.490287, -122.908446],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_67f807cf877cc007c6f297b9e087f91e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d93670a4b6abf4de1c233a55ba71a450 = $(`<div id="html_d93670a4b6abf4de1c233a55ba71a450" style="width: 100.0%; height: 100.0%;"><b>[13] 4093 SE Reed Dr, Hillsboro</b><br>Open: Sun 23 Aug 11:00AM-1:00PM<br>lot 5,227 sqft · built 2020 · $815,000<br>covered patio, firepit, big yard, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/4093-SE-Reed-Dr_Hillsboro_OR_97123_M93946-05191" target="_blank">listing</a></div>`)[0];
+                popup_67f807cf877cc007c6f297b9e087f91e.setContent(html_d93670a4b6abf4de1c233a55ba71a450);
+            
+        
+
+        marker_7c9f6bbb5e9648cd7cf167047ab5fd12.bindPopup(popup_67f807cf877cc007c6f297b9e087f91e)
+        ;
+
+        
+    
+    
+            marker_7c9f6bbb5e9648cd7cf167047ab5fd12.bindTooltip(
+                `<div>
+                     [13] 4093 SE Reed Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca8b08808ebc32e18ccdcd3337800055 = L.marker(
+                [45.49532, -122.928957],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_8f96b47ed4e9ce1d6f13bcf171d59f9c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_51888f0a1780adcccb22e7f4fbea3085 = $(`<div id="html_51888f0a1780adcccb22e7f4fbea3085" style="width: 100.0%; height: 100.0%;"><b>[10] 3373 SE Everwood Ln, Hillsboro</b><br>Open: Fri 21 Aug 12:00PM-3:00PM<br>lot 871 sqft · built 2025 · $419,500<br>covered patio, deck, porch<br><a href="https://www.realtor.com/realestateandhomes-detail/3373-SE-Everwood-Ln_Hillsboro_OR_97123_M98208-43490" target="_blank">listing</a></div>`)[0];
+                popup_8f96b47ed4e9ce1d6f13bcf171d59f9c.setContent(html_51888f0a1780adcccb22e7f4fbea3085);
+            
+        
+
+        marker_ca8b08808ebc32e18ccdcd3337800055.bindPopup(popup_8f96b47ed4e9ce1d6f13bcf171d59f9c)
+        ;
+
+        
+    
+    
+            marker_ca8b08808ebc32e18ccdcd3337800055.bindTooltip(
+                `<div>
+                     [10] 3373 SE Everwood Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9756e6d8045bdea67d44213cddf291cc = L.marker(
+                [45.494964, -122.929387],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_18fd684c85e90b51587e9962aff00a4e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d08a4a6d388f736bde770521d16dbef4 = $(`<div id="html_d08a4a6d388f736bde770521d16dbef4" style="width: 100.0%; height: 100.0%;"><b>[9] 3445 SE Everwood Ln, Hillsboro</b><br>Open: Fri 21 Aug 12:00PM-3:00PM<br>lot 2,178 sqft · built 2026 · $489,500<br>covered patio, deck<br><a href="https://www.realtor.com/realestateandhomes-detail/3445-SE-Everwood-Ln_Hillsboro_OR_97123_M98447-58366" target="_blank">listing</a></div>`)[0];
+                popup_18fd684c85e90b51587e9962aff00a4e.setContent(html_d08a4a6d388f736bde770521d16dbef4);
+            
+        
+
+        marker_9756e6d8045bdea67d44213cddf291cc.bindPopup(popup_18fd684c85e90b51587e9962aff00a4e)
+        ;
+
+        
+    
+    
+            marker_9756e6d8045bdea67d44213cddf291cc.bindTooltip(
+                `<div>
+                     [9] 3445 SE Everwood Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_38fd929388841ef1c795b6e79dffec00 = L.marker(
+                [45.48024, -122.898292],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_3e0e0e40332c9887bec2b773367f6c27 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7caf357b59783622b42e4d8485da0df5 = $(`<div id="html_7caf357b59783622b42e4d8485da0df5" style="width: 100.0%; height: 100.0%;"><b>[8] 5474 SE 80th Ave, Hillsboro</b><br>Open: Sat 22 Aug 12:00PM-2:00PM<br>lot 6,534 sqft · built 2019 · $779,000<br>covered patio, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/5474-SE-80th-Ave_Hillsboro_OR_97123_M95323-97306" target="_blank">listing</a></div>`)[0];
+                popup_3e0e0e40332c9887bec2b773367f6c27.setContent(html_7caf357b59783622b42e4d8485da0df5);
+            
+        
+
+        marker_38fd929388841ef1c795b6e79dffec00.bindPopup(popup_3e0e0e40332c9887bec2b773367f6c27)
+        ;
+
+        
+    
+    
+            marker_38fd929388841ef1c795b6e79dffec00.bindTooltip(
+                `<div>
+                     [8] 5474 SE 80th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cbfc48424b083783bc88fe448163e618 = L.marker(
+                [45.510379, -122.977241],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_ac52c0e278871824001befdda3bd4917 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a02625d62391214ab509c4ec07a35485 = $(`<div id="html_a02625d62391214ab509c4ec07a35485" style="width: 100.0%; height: 100.0%;"><b>[8] 840 SE Bacarra St, Hillsboro</b><br>Open: Sat 22 Aug 2:00PM-4:00PM<br>lot 3,485 sqft · built 2017 · $578,400<br>covered patio, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/840-SE-Bacarra-St_Hillsboro_OR_97123_M14871-59297" target="_blank">listing</a></div>`)[0];
+                popup_ac52c0e278871824001befdda3bd4917.setContent(html_a02625d62391214ab509c4ec07a35485);
+            
+        
+
+        marker_cbfc48424b083783bc88fe448163e618.bindPopup(popup_ac52c0e278871824001befdda3bd4917)
+        ;
+
+        
+    
+    
+            marker_cbfc48424b083783bc88fe448163e618.bindTooltip(
+                `<div>
+                     [8] 840 SE Bacarra St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae208c46468c63fdec86512e3cbf1756 = L.marker(
+                [45.53894, -122.996906],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_ea78f18df965c4266c9a09781e33a2f0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4f38978f35c14d4b39c1f3713d66c071 = $(`<div id="html_4f38978f35c14d4b39c1f3713d66c071" style="width: 100.0%; height: 100.0%;"><b>[8] 1981 NW 2nd Ct, Hillsboro</b><br>Open: Sun 23 Aug 1:00PM-3:00PM<br>lot 2,614 sqft · built 2005 · $498,900<br>deck, hot tub, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/1981-NW-2nd-Ct_Hillsboro_OR_97124_M21865-34500" target="_blank">listing</a></div>`)[0];
+                popup_ea78f18df965c4266c9a09781e33a2f0.setContent(html_4f38978f35c14d4b39c1f3713d66c071);
+            
+        
+
+        marker_ae208c46468c63fdec86512e3cbf1756.bindPopup(popup_ea78f18df965c4266c9a09781e33a2f0)
+        ;
+
+        
+    
+    
+            marker_ae208c46468c63fdec86512e3cbf1756.bindTooltip(
+                `<div>
+                     [8] 1981 NW 2nd Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a42ed2c16508a3d151813394965bc13c = L.marker(
+                [45.449102, -122.989676],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_4b80bc03833ed8dc7a9bc2d1a1588fc2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_edad4f9e568a9dcd77a6caee2429fd20 = $(`<div id="html_edad4f9e568a9dcd77a6caee2429fd20" style="width: 100.0%; height: 100.0%;"><b>[7] 9800 SW Hillsboro Hwy, Hillsboro</b><br>Open: Sun 23 Aug 12:30PM-3:00PM<br>lot 20,473 sqft · built 1950 · $615,000<br>deck, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/9800-SW-Hillsboro-Hwy_Hillsboro_OR_97123_M91687-71137" target="_blank">listing</a></div>`)[0];
+                popup_4b80bc03833ed8dc7a9bc2d1a1588fc2.setContent(html_edad4f9e568a9dcd77a6caee2429fd20);
+            
+        
+
+        marker_a42ed2c16508a3d151813394965bc13c.bindPopup(popup_4b80bc03833ed8dc7a9bc2d1a1588fc2)
+        ;
+
+        
+    
+    
+            marker_a42ed2c16508a3d151813394965bc13c.bindTooltip(
+                `<div>
+                     [7] 9800 SW Hillsboro Hwy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08f746d707608331a9d9eeab7b04fbe3 = L.marker(
+                [45.534575, -122.920649],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_1078d2b476c81f66d4d491c25767e568 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_007f5bc7d263160e95f8b51f5964de03 = $(`<div id="html_007f5bc7d263160e95f8b51f5964de03" style="width: 100.0%; height: 100.0%;"><b>[6] 5958 NE Ray Cir, Hillsboro</b><br>Open: Sat 22 Aug 12:00PM-2:00PM; Sun 23 Aug 12:00PM-2:00PM<br>lot 10,019 sqft · built 1989 · $650,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/5958-NE-Ray-Cir_Hillsboro_OR_97124_M22792-36604" target="_blank">listing</a></div>`)[0];
+                popup_1078d2b476c81f66d4d491c25767e568.setContent(html_007f5bc7d263160e95f8b51f5964de03);
+            
+        
+
+        marker_08f746d707608331a9d9eeab7b04fbe3.bindPopup(popup_1078d2b476c81f66d4d491c25767e568)
+        ;
+
+        
+    
+    
+            marker_08f746d707608331a9d9eeab7b04fbe3.bindTooltip(
+                `<div>
+                     [6] 5958 NE Ray Cir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59db33eefd0c0147ddb53a83bacee251 = L.marker(
+                [45.53281, -122.994781],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_a3ca74d958ed61c57b2b94ff91892278 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a87246e5de957fd8539388695e132354 = $(`<div id="html_a87246e5de957fd8539388695e132354" style="width: 100.0%; height: 100.0%;"><b>[6] 1129 NW Connell Ave, Hillsboro</b><br>Open: Sun 23 Aug 3:00PM-5:00PM<br>lot 14,810 sqft · built 1979 · $729,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/1129-NW-Connell-Ave_Hillsboro_OR_97124_M21076-13641" target="_blank">listing</a></div>`)[0];
+                popup_a3ca74d958ed61c57b2b94ff91892278.setContent(html_a87246e5de957fd8539388695e132354);
+            
+        
+
+        marker_59db33eefd0c0147ddb53a83bacee251.bindPopup(popup_a3ca74d958ed61c57b2b94ff91892278)
+        ;
+
+        
+    
+    
+            marker_59db33eefd0c0147ddb53a83bacee251.bindTooltip(
+                `<div>
+                     [6] 1129 NW Connell Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86bc6cc2e9ac6f61bb05fafda6ae648e = L.marker(
+                [45.537831, -122.916548],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_c5f4de71257843ea0a650339afdde68d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_334218f11e7da48d173c8db386e54145 = $(`<div id="html_334218f11e7da48d173c8db386e54145" style="width: 100.0%; height: 100.0%;"><b>[5] 1860 NE Orenco Station Pkwy, Hillsboro</b><br>Open: Sun 23 Aug 10:00AM-1:00PM<br>lot 2,178 sqft · built 1998 · $425,000<br>hot tub, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/1860-NE-Orenco-Station-Pkwy_Hillsboro_OR_97124_M19613-01253" target="_blank">listing</a></div>`)[0];
+                popup_c5f4de71257843ea0a650339afdde68d.setContent(html_334218f11e7da48d173c8db386e54145);
+            
+        
+
+        marker_86bc6cc2e9ac6f61bb05fafda6ae648e.bindPopup(popup_c5f4de71257843ea0a650339afdde68d)
+        ;
+
+        
+    
+    
+            marker_86bc6cc2e9ac6f61bb05fafda6ae648e.bindTooltip(
+                `<div>
+                     [5] 1860 NE Orenco Station Pkwy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59d82b642c19cc86fd16d969591bb49b = L.marker(
+                [45.502213, -122.929127],
+                {
+}
+            ).addTo(map_84d816ac523f71f061bcd576f8a98935);
+        
+    
+        var popup_6e2c59e93f73de0421a703e58a99f375 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8799c8f3f3b33ae0387886d06a5fdc04 = $(`<div id="html_8799c8f3f3b33ae0387886d06a5fdc04" style="width: 100.0%; height: 100.0%;"><b>[4] 2330 SE Brookwood Ave, Hillsboro</b><br>Open: Sat 29 Aug 12:00PM-2:00PM<br>built 1980 · $239,000<br>deck<br><a href="https://www.realtor.com/realestateandhomes-detail/2330-SE-Brookwood-Ave-Apt-221_Hillsboro_OR_97123_M22564-49594" target="_blank">listing</a></div>`)[0];
+                popup_6e2c59e93f73de0421a703e58a99f375.setContent(html_8799c8f3f3b33ae0387886d06a5fdc04);
+            
+        
+
+        marker_59d82b642c19cc86fd16d969591bb49b.bindPopup(popup_6e2c59e93f73de0421a703e58a99f375)
+        ;
+
+        
+    
+    
+            marker_59d82b642c19cc86fd16d969591bb49b.bindTooltip(
+                `<div>
+                     [4] 2330 SE Brookwood Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
