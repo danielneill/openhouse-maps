@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bee07c6026e7501e149e13e90252d7f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bee07c6026e7501e149e13e90252d7f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bee07c6026e7501e149e13e90252d7f3 = L.map(
+                "map_bee07c6026e7501e149e13e90252d7f3",
+                {
+                    center: [45.403043, -122.69386],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9dda4f3d565709461a12c59a94c99a03 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9dda4f3d565709461a12c59a94c99a03.addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+            map_bee07c6026e7501e149e13e90252d7f3.fitBounds(
+                [[45.403043, -122.69386], [45.391637, -122.696469], [45.439241, -122.724105], [45.430195, -122.685037], [45.543721, -122.975164], [45.393551, -122.725993], [45.491032, -122.893501], [45.408075, -122.737496], [45.429641, -122.691916], [45.391837, -122.703095], [45.533062, -122.966632], [45.511295, -122.960516], [45.430646, -122.696549], [45.416921, -122.679904]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_9749566d6e24c39550e6ee1c16d838a7 = L.marker(
+                [45.403043, -122.69386],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_98dbc0e63b3794d75b44093702249696 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a9c00263e8e9d656e334445b6bb44b0a = $(`<div id="html_a9c00263e8e9d656e334445b6bb44b0a" style="width: 100.0%; height: 100.0%;"><b>[11] 16998 Greentree Ave, Lake Oswego</b><br>Open: Sat 10 Oct 1:00PM-3:00PM<br>built 1968 · $1,195,000<br>deck, pergola, hot tub<br><a href="https://www.realtor.com/realestateandhomes-detail/16998-Greentree-Ave_Lake-Oswego_OR_97034_M27550-42502" target="_blank">listing</a></div>`)[0];
+                popup_98dbc0e63b3794d75b44093702249696.setContent(html_a9c00263e8e9d656e334445b6bb44b0a);
+            
+        
+
+        marker_9749566d6e24c39550e6ee1c16d838a7.bindPopup(popup_98dbc0e63b3794d75b44093702249696)
+        ;
+
+        
+    
+    
+            marker_9749566d6e24c39550e6ee1c16d838a7.bindTooltip(
+                `<div>
+                     [11] 16998 Greentree Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_434e47599dde9e212769a1c58c404276 = L.marker(
+                [45.391637, -122.696469],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_5f762aeb7297e0fe52e2f076db8f178b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2225249b7e39cf403b9db8f1a97304b6 = $(`<div id="html_2225249b7e39cf403b9db8f1a97304b6" style="width: 100.0%; height: 100.0%;"><b>[11] 18284 Meadowlark Ln, Lake Oswego</b><br>Open: Sat 10 Oct 1:00PM-3:00PM<br>built 2004 · $1,849,000<br>covered patio, deck, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/18284-Meadowlark-Ln_Lake-Oswego_OR_97034_M23290-16323" target="_blank">listing</a></div>`)[0];
+                popup_5f762aeb7297e0fe52e2f076db8f178b.setContent(html_2225249b7e39cf403b9db8f1a97304b6);
+            
+        
+
+        marker_434e47599dde9e212769a1c58c404276.bindPopup(popup_5f762aeb7297e0fe52e2f076db8f178b)
+        ;
+
+        
+    
+    
+            marker_434e47599dde9e212769a1c58c404276.bindTooltip(
+                `<div>
+                     [11] 18284 Meadowlark Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_28d89390a617574906f9cfe3b423f655 = L.marker(
+                [45.439241, -122.724105],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_9f08431000b1c21ede0ae81a711b7c7a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_56657d070710067bc0b53b3401cec87c = $(`<div id="html_56657d070710067bc0b53b3401cec87c" style="width: 100.0%; height: 100.0%;"><b>[11] 107 Garibaldi St, Lake Oswego</b><br>Open: Sun 11 Oct 1:00PM-3:00PM<br>lot 10,019 sqft · built 1982 · $995,000<br>deck, hot tub, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/107-Garibaldi-St_Lake-Oswego_OR_97035_M22091-25365" target="_blank">listing</a></div>`)[0];
+                popup_9f08431000b1c21ede0ae81a711b7c7a.setContent(html_56657d070710067bc0b53b3401cec87c);
+            
+        
+
+        marker_28d89390a617574906f9cfe3b423f655.bindPopup(popup_9f08431000b1c21ede0ae81a711b7c7a)
+        ;
+
+        
+    
+    
+            marker_28d89390a617574906f9cfe3b423f655.bindTooltip(
+                `<div>
+                     [11] 107 Garibaldi St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c6b089fffb2555d05486515db9fb9ad = L.marker(
+                [45.430195, -122.685037],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_fdaa3f880d52762dc8d0a36036f58664 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_081f92440c0ec409ae40c15459f2e324 = $(`<div id="html_081f92440c0ec409ae40c15459f2e324" style="width: 100.0%; height: 100.0%;"><b>[9] 801 Timberline Dr, Lake Oswego</b><br>Open: Sat 10 Oct 12:00PM-2:00PM; Sun 11 Oct 11:00AM-1:00PM<br>lot 14,810 sqft · built 1977 · $949,000<br>deck, private backyard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/801-Timberline-Dr_Lake-Oswego_OR_97034_M22120-77721" target="_blank">listing</a></div>`)[0];
+                popup_fdaa3f880d52762dc8d0a36036f58664.setContent(html_081f92440c0ec409ae40c15459f2e324);
+            
+        
+
+        marker_5c6b089fffb2555d05486515db9fb9ad.bindPopup(popup_fdaa3f880d52762dc8d0a36036f58664)
+        ;
+
+        
+    
+    
+            marker_5c6b089fffb2555d05486515db9fb9ad.bindTooltip(
+                `<div>
+                     [9] 801 Timberline Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e22adec91bf3f284579fe7632ad1ed5 = L.marker(
+                [45.543721, -122.975164],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_bc25eeb794fa48b7caa8b931242018cc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8c8c6e0c1ec24ed437cfb44b3ef1dce1 = $(`<div id="html_8c8c6e0c1ec24ed437cfb44b3ef1dce1" style="width: 100.0%; height: 100.0%;"><b>[9] 2619 NE Charlois Dr, Hillsboro</b><br>Open: Sun 11 Oct 12:00PM-3:00PM<br>lot 6,098 sqft · built 1998 · $665,000<br>deck, private backyard, fenced yard, porch<br><a href="https://www.realtor.com/realestateandhomes-detail/2619-NE-Charlois-Dr_Hillsboro_OR_97124_M23095-88048" target="_blank">listing</a></div>`)[0];
+                popup_bc25eeb794fa48b7caa8b931242018cc.setContent(html_8c8c6e0c1ec24ed437cfb44b3ef1dce1);
+            
+        
+
+        marker_8e22adec91bf3f284579fe7632ad1ed5.bindPopup(popup_bc25eeb794fa48b7caa8b931242018cc)
+        ;
+
+        
+    
+    
+            marker_8e22adec91bf3f284579fe7632ad1ed5.bindTooltip(
+                `<div>
+                     [9] 2619 NE Charlois Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8d81f8c0ad57cb9c073438cfd334637 = L.marker(
+                [45.393551, -122.725993],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_c6233701f6ed7ed6387d90398034f934 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_498eabf7bbd6b355e386d7257a624e88 = $(`<div id="html_498eabf7bbd6b355e386d7257a624e88" style="width: 100.0%; height: 100.0%;"><b>[8] 18280 Indian Creek Dr, Lake Oswego</b><br>Open: Sun 11 Oct 2:00PM-4:00PM<br>lot 11,761 sqft · built 1976 · $730,000<br>deck, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/18280-Indian-Creek-Dr_Lake-Oswego_OR_97035_M16545-67849" target="_blank">listing</a></div>`)[0];
+                popup_c6233701f6ed7ed6387d90398034f934.setContent(html_498eabf7bbd6b355e386d7257a624e88);
+            
+        
+
+        marker_f8d81f8c0ad57cb9c073438cfd334637.bindPopup(popup_c6233701f6ed7ed6387d90398034f934)
+        ;
+
+        
+    
+    
+            marker_f8d81f8c0ad57cb9c073438cfd334637.bindTooltip(
+                `<div>
+                     [8] 18280 Indian Creek Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a23fe6620896013b55c86e653e7101a = L.marker(
+                [45.491032, -122.893501],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_62dd200c0bbf256c73d2f87363ac6d79 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a963774759f8aedb1e4838c12eb96ebb = $(`<div id="html_a963774759f8aedb1e4838c12eb96ebb" style="width: 100.0%; height: 100.0%;"><b>[7] 8574 SE Bobcat Ln, Hillsboro</b><br>Open: Thu 8 Oct 10:00AM-6:00PM; Fri 9 Oct 10:00AM-6:00PM<br>built 2026 · $679,960<br>covered patio, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/8574-SE-Bobcat-Ln_Hillsboro_OR_97129_M96047-13222" target="_blank">listing</a></div>`)[0];
+                popup_62dd200c0bbf256c73d2f87363ac6d79.setContent(html_a963774759f8aedb1e4838c12eb96ebb);
+            
+        
+
+        marker_4a23fe6620896013b55c86e653e7101a.bindPopup(popup_62dd200c0bbf256c73d2f87363ac6d79)
+        ;
+
+        
+    
+    
+            marker_4a23fe6620896013b55c86e653e7101a.bindTooltip(
+                `<div>
+                     [7] 8574 SE Bobcat Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24ced469ab2bac7b862b1c9821b21879 = L.marker(
+                [45.408075, -122.737496],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_ae372b43fbe9ac29f330120b4d35f866 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_387d2cc1992b140f799ff977de3dc779 = $(`<div id="html_387d2cc1992b140f799ff977de3dc779" style="width: 100.0%; height: 100.0%;"><b>[7] 16294 Parker Rd, Lake Oswego</b><br>Open: Sat 10 Oct 11:00AM-2:00PM<br>lot 20,473 sqft · built 1956 · $1,350,000<br>firepit, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/16294-Parker-Rd_Lake-Oswego_OR_97035_M25228-38415" target="_blank">listing</a></div>`)[0];
+                popup_ae372b43fbe9ac29f330120b4d35f866.setContent(html_387d2cc1992b140f799ff977de3dc779);
+            
+        
+
+        marker_24ced469ab2bac7b862b1c9821b21879.bindPopup(popup_ae372b43fbe9ac29f330120b4d35f866)
+        ;
+
+        
+    
+    
+            marker_24ced469ab2bac7b862b1c9821b21879.bindTooltip(
+                `<div>
+                     [7] 16294 Parker Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_873694f7106f83e29df32df6540d9501 = L.marker(
+                [45.429641, -122.691916],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_9921a59bbd1f860117a2d945001b10da = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8b7159b5308cb59243907c9b693aa25c = $(`<div id="html_8b7159b5308cb59243907c9b693aa25c" style="width: 100.0%; height: 100.0%;"><b>[6] 13240 Knaus Rd, Lake Oswego</b><br>Open: Sat 10 Oct 1:00PM-3:00PM; Sun 11 Oct 10:00AM-12:00PM<br>lot 21,780 sqft · built 1966 · $1,400,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/13240-Knaus-Rd_Lake-Oswego_OR_97034_M22170-34091" target="_blank">listing</a></div>`)[0];
+                popup_9921a59bbd1f860117a2d945001b10da.setContent(html_8b7159b5308cb59243907c9b693aa25c);
+            
+        
+
+        marker_873694f7106f83e29df32df6540d9501.bindPopup(popup_9921a59bbd1f860117a2d945001b10da)
+        ;
+
+        
+    
+    
+            marker_873694f7106f83e29df32df6540d9501.bindTooltip(
+                `<div>
+                     [6] 13240 Knaus Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_224fff583ef4ebc1019c3f0cd5a9a8ee = L.marker(
+                [45.391837, -122.703095],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_060caefe8adfdda3fe864ed959104d35 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_46d18a43969dda1565d73a18b542cfdd = $(`<div id="html_46d18a43969dda1565d73a18b542cfdd" style="width: 100.0%; height: 100.0%;"><b>[6] 18520 Delenka Ln, Lake Oswego</b><br>Open: Sat 10 Oct 1:00PM-3:00PM<br>lot 44,867 sqft · built 1985 · $1,895,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/18520-Delenka-Ln_Lake-Oswego_OR_97034_M15698-99627" target="_blank">listing</a></div>`)[0];
+                popup_060caefe8adfdda3fe864ed959104d35.setContent(html_46d18a43969dda1565d73a18b542cfdd);
+            
+        
+
+        marker_224fff583ef4ebc1019c3f0cd5a9a8ee.bindPopup(popup_060caefe8adfdda3fe864ed959104d35)
+        ;
+
+        
+    
+    
+            marker_224fff583ef4ebc1019c3f0cd5a9a8ee.bindTooltip(
+                `<div>
+                     [6] 18520 Delenka Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_645df1967092295300573187cd186940 = L.marker(
+                [45.533062, -122.966632],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_0a31ac78b198552d059cda8c6ae5118f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f3380f11109299a4935b29ad99307148 = $(`<div id="html_f3380f11109299a4935b29ad99307148" style="width: 100.0%; height: 100.0%;"><b>[5] 1573 NE Barberry Dr, Hillsboro</b><br>Open: Fri 9 Oct 8:00AM-7:00PM; Sat 10 Oct 8:00AM-7:00PM; Sun 11 Oct 8:00AM-7:00PM<br>lot 9,583 sqft · built 1969 · $487,000<br>patio, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/1573-NE-Barberry-Dr_Hillsboro_OR_97124_M14909-74090" target="_blank">listing</a></div>`)[0];
+                popup_0a31ac78b198552d059cda8c6ae5118f.setContent(html_f3380f11109299a4935b29ad99307148);
+            
+        
+
+        marker_645df1967092295300573187cd186940.bindPopup(popup_0a31ac78b198552d059cda8c6ae5118f)
+        ;
+
+        
+    
+    
+            marker_645df1967092295300573187cd186940.bindTooltip(
+                `<div>
+                     [5] 1573 NE Barberry Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b79ab2015827f18093057fcca3ca5df4 = L.marker(
+                [45.511295, -122.960516],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_2526b6ac3b920cbb5765a531af3b518a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_150261422fd7ccdb7c683b38b1a4f62c = $(`<div id="html_150261422fd7ccdb7c683b38b1a4f62c" style="width: 100.0%; height: 100.0%;"><b>[5] 2160 SE Cedar Park Ct, Hillsboro</b><br>Open: Sat 10 Oct 11:00AM-1:00PM<br>lot 6,534 sqft · built 1961 · $539,000<br>deck, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/2160-SE-Cedar-Park-Ct_Hillsboro_OR_97123_M16237-00856" target="_blank">listing</a></div>`)[0];
+                popup_2526b6ac3b920cbb5765a531af3b518a.setContent(html_150261422fd7ccdb7c683b38b1a4f62c);
+            
+        
+
+        marker_b79ab2015827f18093057fcca3ca5df4.bindPopup(popup_2526b6ac3b920cbb5765a531af3b518a)
+        ;
+
+        
+    
+    
+            marker_b79ab2015827f18093057fcca3ca5df4.bindTooltip(
+                `<div>
+                     [5] 2160 SE Cedar Park Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_126d64039ba5735d3bdc6ba6ccd2ad3d = L.marker(
+                [45.430646, -122.696549],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_6101452dde5c584db158e5479cb2a91b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a3207e4fa27a08005d10e797bc356239 = $(`<div id="html_a3207e4fa27a08005d10e797bc356239" style="width: 100.0%; height: 100.0%;"><b>[4] 13264 Goodall Rd, Lake Oswego</b><br>Open: Sat 10 Oct 2:00PM-4:00PM<br>lot 37,462 sqft · built 2005 · $2,700,000<br>patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/13264-Goodall-Rd_Lake-Oswego_OR_97034_M22284-74736" target="_blank">listing</a></div>`)[0];
+                popup_6101452dde5c584db158e5479cb2a91b.setContent(html_a3207e4fa27a08005d10e797bc356239);
+            
+        
+
+        marker_126d64039ba5735d3bdc6ba6ccd2ad3d.bindPopup(popup_6101452dde5c584db158e5479cb2a91b)
+        ;
+
+        
+    
+    
+            marker_126d64039ba5735d3bdc6ba6ccd2ad3d.bindTooltip(
+                `<div>
+                     [4] 13264 Goodall Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e01de3644ee0866a47d47c988a057133 = L.marker(
+                [45.416921, -122.679904],
+                {
+}
+            ).addTo(map_bee07c6026e7501e149e13e90252d7f3);
+        
+    
+        var popup_a4496e55b979051872aa054693610c72 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8163aac1fce82fa9f2e9ca233cb744e4 = $(`<div id="html_8163aac1fce82fa9f2e9ca233cb744e4" style="width: 100.0%; height: 100.0%;"><b>[4] 199 Pine Valley Rd, Lake Oswego</b><br>Open: Sun 11 Oct 12:00PM-2:00PM<br>lot 33,977 sqft · built 1948 · $1,895,000<br>patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/199-Pine-Valley-Rd_Lake-Oswego_OR_97034_M20507-07966" target="_blank">listing</a></div>`)[0];
+                popup_a4496e55b979051872aa054693610c72.setContent(html_8163aac1fce82fa9f2e9ca233cb744e4);
+            
+        
+
+        marker_e01de3644ee0866a47d47c988a057133.bindPopup(popup_a4496e55b979051872aa054693610c72)
+        ;
+
+        
+    
+    
+            marker_e01de3644ee0866a47d47c988a057133.bindTooltip(
+                `<div>
+                     [4] 199 Pine Valley Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
