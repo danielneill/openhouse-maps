@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ab0963511c3af50c02b966dc1630672 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ab0963511c3af50c02b966dc1630672" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ab0963511c3af50c02b966dc1630672 = L.map(
+                "map_0ab0963511c3af50c02b966dc1630672",
+                {
+                    center: [45.410211, -122.737753],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a55451b3f6c27504b710770bdb0621c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6a55451b3f6c27504b710770bdb0621c.addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+            map_0ab0963511c3af50c02b966dc1630672.fitBounds(
+                [[45.410211, -122.737753], [45.424988, -123.0286], [45.488785, -122.921532], [45.40027, -122.66944], [45.510586, -122.954866], [45.518147, -122.90179], [45.386381, -122.736306], [45.387308, -122.715085], [45.430331, -122.718648], [45.605881, -122.923196], [45.410672, -122.734905], [45.407969, -122.674037], [45.506029, -122.9351]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_7806ad251eb7a3cf7ad9032c3542ec60 = L.marker(
+                [45.410211, -122.737753],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_e7212226710ab10b2c4975c56f32e320 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e9575ca44ce11ac4908d062c46ccbf6b = $(`<div id="html_e9575ca44ce11ac4908d062c46ccbf6b" style="width: 100.0%; height: 100.0%;"><b>[12] 15986 Parker Rd, Lake Oswego</b><br>Open: Sun 18 Oct 10:00AM-12:00PM<br>lot 9,148 sqft · built 2019 · $1,769,000<br>covered patio, hot tub, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/15986-Parker-Rd_Lake-Oswego_OR_97035_M95830-12247" target="_blank">listing</a></div>`)[0];
+                popup_e7212226710ab10b2c4975c56f32e320.setContent(html_e9575ca44ce11ac4908d062c46ccbf6b);
+            
+        
+
+        marker_7806ad251eb7a3cf7ad9032c3542ec60.bindPopup(popup_e7212226710ab10b2c4975c56f32e320)
+        ;
+
+        
+    
+    
+            marker_7806ad251eb7a3cf7ad9032c3542ec60.bindTooltip(
+                `<div>
+                     [12] 15986 Parker Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_38e2489a78b51d2928e401e76a8b2cd0 = L.marker(
+                [45.424988, -123.0286],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_52b9de606cc0a19cbb66a148538f041d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2e13236e3a09400c2825ede863f95ff2 = $(`<div id="html_2e13236e3a09400c2825ede863f95ff2" style="width: 100.0%; height: 100.0%;"><b>[12] 34160 SW Peaks View Dr, Hillsboro</b><br>Open: Sun 18 Oct 1:00PM-4:00PM<br>lot 461,736 sqft · built 1999 · $3,325,000<br>covered patio, outdoor kitchen, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/34160-SW-Peaks-View-Dr_Hillsboro_OR_97123_M19887-10856" target="_blank">listing</a></div>`)[0];
+                popup_52b9de606cc0a19cbb66a148538f041d.setContent(html_2e13236e3a09400c2825ede863f95ff2);
+            
+        
+
+        marker_38e2489a78b51d2928e401e76a8b2cd0.bindPopup(popup_52b9de606cc0a19cbb66a148538f041d)
+        ;
+
+        
+    
+    
+            marker_38e2489a78b51d2928e401e76a8b2cd0.bindTooltip(
+                `<div>
+                     [12] 34160 SW Peaks View Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd85d8eb09cc4576fbd4ec4a7c4045d6 = L.marker(
+                [45.488785, -122.921532],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_a324242b14ae9a3bf08836103fda8e6a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a4fc8a1be4aea7bf9fb083c19d14344d = $(`<div id="html_a4fc8a1be4aea7bf9fb083c19d14344d" style="width: 100.0%; height: 100.0%;"><b>[9] 5842 SE Provence St, Hillsboro</b><br>Open: Sat 17 Oct 12:00PM-2:00PM<br>lot 8,276 sqft · built 2018 · $1,125,000<br>covered patio, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/5842-SE-Provence-St_Hillsboro_OR_97129_M93119-50235" target="_blank">listing</a></div>`)[0];
+                popup_a324242b14ae9a3bf08836103fda8e6a.setContent(html_a4fc8a1be4aea7bf9fb083c19d14344d);
+            
+        
+
+        marker_fd85d8eb09cc4576fbd4ec4a7c4045d6.bindPopup(popup_a324242b14ae9a3bf08836103fda8e6a)
+        ;
+
+        
+    
+    
+            marker_fd85d8eb09cc4576fbd4ec4a7c4045d6.bindTooltip(
+                `<div>
+                     [9] 5842 SE Provence St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4f595116c207e5e785b72e60b6727dd = L.marker(
+                [45.40027, -122.66944],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_bda78ab34e76d0a570788b8d52176845 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_62814c72fdc6068265db8e192cbea3e8 = $(`<div id="html_62814c72fdc6068265db8e192cbea3e8" style="width: 100.0%; height: 100.0%;"><b>[9] 17849 Upper Cherry Ln, Lake Oswego</b><br>Open: Sun 18 Oct 1:00PM-3:00PM<br>lot 82,328 sqft · built 1968 · $4,950,000<br>deck, firepit, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/17849-Upper-Cherry-Ln_Lake-Oswego_OR_97034_M13312-85797" target="_blank">listing</a></div>`)[0];
+                popup_bda78ab34e76d0a570788b8d52176845.setContent(html_62814c72fdc6068265db8e192cbea3e8);
+            
+        
+
+        marker_f4f595116c207e5e785b72e60b6727dd.bindPopup(popup_bda78ab34e76d0a570788b8d52176845)
+        ;
+
+        
+    
+    
+            marker_f4f595116c207e5e785b72e60b6727dd.bindTooltip(
+                `<div>
+                     [9] 17849 Upper Cherry Ln
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1ff700e093c4a59c6f932bde2ae23dd5 = L.marker(
+                [45.510586, -122.954866],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_67aa5657db6ff8a00fae37881ddd5518 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0cdd44b5e2c463b865bccde06ba09e4b = $(`<div id="html_0cdd44b5e2c463b865bccde06ba09e4b" style="width: 100.0%; height: 100.0%;"><b>[8] 2706 SE Spruce St, Hillsboro</b><br>Open: Sat 17 Oct 11:00AM-1:00PM<br>lot 9,148 sqft · built 1970 · $795,000<br>deck, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/2706-SE-Spruce-St_Hillsboro_OR_97123_M14255-86362" target="_blank">listing</a></div>`)[0];
+                popup_67aa5657db6ff8a00fae37881ddd5518.setContent(html_0cdd44b5e2c463b865bccde06ba09e4b);
+            
+        
+
+        marker_1ff700e093c4a59c6f932bde2ae23dd5.bindPopup(popup_67aa5657db6ff8a00fae37881ddd5518)
+        ;
+
+        
+    
+    
+            marker_1ff700e093c4a59c6f932bde2ae23dd5.bindTooltip(
+                `<div>
+                     [8] 2706 SE Spruce St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8998311d852704e259bb32b6a8c77420 = L.marker(
+                [45.518147, -122.90179],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_eb0b049685cc52cef680d4edf4ae7645 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9ea3cb01609b2ca6b6aef77f6cf22ef2 = $(`<div id="html_9ea3cb01609b2ca6b6aef77f6cf22ef2" style="width: 100.0%; height: 100.0%;"><b>[7] 7386 NE Nelly St, Hillsboro</b><br>Open: Sat 17 Oct 11:00AM-1:00PM; Sun 18 Oct 1:00PM-3:00PM<br>lot 4,792 sqft · built 2000 · $500,000<br>deck, hot tub<br><a href="https://www.realtor.com/realestateandhomes-detail/7386-NE-Nelly-St_Hillsboro_OR_97124_M26986-29966" target="_blank">listing</a></div>`)[0];
+                popup_eb0b049685cc52cef680d4edf4ae7645.setContent(html_9ea3cb01609b2ca6b6aef77f6cf22ef2);
+            
+        
+
+        marker_8998311d852704e259bb32b6a8c77420.bindPopup(popup_eb0b049685cc52cef680d4edf4ae7645)
+        ;
+
+        
+    
+    
+            marker_8998311d852704e259bb32b6a8c77420.bindTooltip(
+                `<div>
+                     [7] 7386 NE Nelly St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce83e98fc6a72da9e9ab9e5e4aefdfa6 = L.marker(
+                [45.386381, -122.736306],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_1d4679b5400835df5fa5fcf685485b6e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_56100a1e32f55b982b8094ead75e0239 = $(`<div id="html_56100a1e32f55b982b8094ead75e0239" style="width: 100.0%; height: 100.0%;"><b>[7] 5675 Childs Rd, Lake Oswego</b><br>Open: Sat 17 Oct 1:00PM-3:00PM<br>lot 14,810 sqft · built 1930 · $689,000<br>hot tub, big yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/5675-Childs-Rd_Lake-Oswego_OR_97035_M17228-39055" target="_blank">listing</a></div>`)[0];
+                popup_1d4679b5400835df5fa5fcf685485b6e.setContent(html_56100a1e32f55b982b8094ead75e0239);
+            
+        
+
+        marker_ce83e98fc6a72da9e9ab9e5e4aefdfa6.bindPopup(popup_1d4679b5400835df5fa5fcf685485b6e)
+        ;
+
+        
+    
+    
+            marker_ce83e98fc6a72da9e9ab9e5e4aefdfa6.bindTooltip(
+                `<div>
+                     [7] 5675 Childs Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dff5d2ae768f15be954337289a183120 = L.marker(
+                [45.387308, -122.715085],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_3ee5b362014520d9fe675a5af8402e1f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_eca436951b943613336afaa277585a46 = $(`<div id="html_eca436951b943613336afaa277585a46" style="width: 100.0%; height: 100.0%;"><b>[6] 19158 Megan Pl, Lake Oswego</b><br>Open: Sat 17 Oct 12:00PM-2:00PM<br>lot 12,197 sqft · built 1988 · $1,499,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/19158-Megan-Pl_Lake-Oswego_OR_97034_M10567-13482" target="_blank">listing</a></div>`)[0];
+                popup_3ee5b362014520d9fe675a5af8402e1f.setContent(html_eca436951b943613336afaa277585a46);
+            
+        
+
+        marker_dff5d2ae768f15be954337289a183120.bindPopup(popup_3ee5b362014520d9fe675a5af8402e1f)
+        ;
+
+        
+    
+    
+            marker_dff5d2ae768f15be954337289a183120.bindTooltip(
+                `<div>
+                     [6] 19158 Megan Pl
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_178cca591916d71ad8176f42e281418f = L.marker(
+                [45.430331, -122.718648],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_6c06a8542ed954c00b2c7472d9d56ec6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_05d0c7912e7d8044ca1ad2baadb7458b = $(`<div id="html_05d0c7912e7d8044ca1ad2baadb7458b" style="width: 100.0%; height: 100.0%;"><b>[5] 31 Da Vinci St, Lake Oswego</b><br>Open: Sat 17 Oct 1:00PM-3:00PM; Sun 18 Oct 1:00PM-3:00PM<br>lot 9,670 sqft · built 1974 · $864,900<br>patio, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/31-Da-Vinci-St_Lake-Oswego_OR_97035_M23131-80223" target="_blank">listing</a></div>`)[0];
+                popup_6c06a8542ed954c00b2c7472d9d56ec6.setContent(html_05d0c7912e7d8044ca1ad2baadb7458b);
+            
+        
+
+        marker_178cca591916d71ad8176f42e281418f.bindPopup(popup_6c06a8542ed954c00b2c7472d9d56ec6)
+        ;
+
+        
+    
+    
+            marker_178cca591916d71ad8176f42e281418f.bindTooltip(
+                `<div>
+                     [5] 31 Da Vinci St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3498d5afa22ac22c31659d4d5128073e = L.marker(
+                [45.605881, -122.923196],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_9486e792886e7e41cf9f0c1a984329af = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0b90979be54b88f98255bbc9af815ab5 = $(`<div id="html_0b90979be54b88f98255bbc9af815ab5" style="width: 100.0%; height: 100.0%;"><b>[5] 11113 NW Helvetia Rd, Hillsboro</b><br>Open: Sun 18 Oct 12:00PM-2:00PM<br>lot 87,120 sqft · built 2023 · $2,650,000<br>firepit, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/11113-NW-Helvetia-Rd_Hillsboro_OR_97124_M96934-18100" target="_blank">listing</a></div>`)[0];
+                popup_9486e792886e7e41cf9f0c1a984329af.setContent(html_0b90979be54b88f98255bbc9af815ab5);
+            
+        
+
+        marker_3498d5afa22ac22c31659d4d5128073e.bindPopup(popup_9486e792886e7e41cf9f0c1a984329af)
+        ;
+
+        
+    
+    
+            marker_3498d5afa22ac22c31659d4d5128073e.bindTooltip(
+                `<div>
+                     [5] 11113 NW Helvetia Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cddce1cb5a9952e13f1ec2746c0ea79 = L.marker(
+                [45.410672, -122.734905],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_89b0feec068fb80ebd9f50c2d58999cc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7213e4332017afa279057cf695b81c49 = $(`<div id="html_7213e4332017afa279057cf695b81c49" style="width: 100.0%; height: 100.0%;"><b>[5] 15860 SW Kimball St, Lake Oswego</b><br>Open: Sun 18 Oct 1:00PM-3:00PM<br>lot 13,504 sqft · built 2026 · $2,500,000<br>private backyard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/15860-Kimball-St_Lake-Oswego_OR_97035_M96455-64347" target="_blank">listing</a></div>`)[0];
+                popup_89b0feec068fb80ebd9f50c2d58999cc.setContent(html_7213e4332017afa279057cf695b81c49);
+            
+        
+
+        marker_0cddce1cb5a9952e13f1ec2746c0ea79.bindPopup(popup_89b0feec068fb80ebd9f50c2d58999cc)
+        ;
+
+        
+    
+    
+            marker_0cddce1cb5a9952e13f1ec2746c0ea79.bindTooltip(
+                `<div>
+                     [5] 15860 SW Kimball St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_07460a77f49ff35e28c2b57e03026130 = L.marker(
+                [45.407969, -122.674037],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_dacac985227713875e81d88341e7de3f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7c52691266ac2d0f35ddefcf0ad7bc0d = $(`<div id="html_7c52691266ac2d0f35ddefcf0ad7bc0d" style="width: 100.0%; height: 100.0%;"><b>[5] 1328 Oak St, Lake Oswego</b><br>Open: Sun 18 Oct 1:30PM-3:00PM<br>built 1948 · $544,900<br>deck, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/1328-Oak-St_Lake-Oswego_OR_97034_M28596-85269" target="_blank">listing</a></div>`)[0];
+                popup_dacac985227713875e81d88341e7de3f.setContent(html_7c52691266ac2d0f35ddefcf0ad7bc0d);
+            
+        
+
+        marker_07460a77f49ff35e28c2b57e03026130.bindPopup(popup_dacac985227713875e81d88341e7de3f)
+        ;
+
+        
+    
+    
+            marker_07460a77f49ff35e28c2b57e03026130.bindTooltip(
+                `<div>
+                     [5] 1328 Oak St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_881d4e47f1e40981c0dcf82e744efde3 = L.marker(
+                [45.506029, -122.9351],
+                {
+}
+            ).addTo(map_0ab0963511c3af50c02b966dc1630672);
+        
+    
+        var popup_e1f82b18ebf950a6be2d0917828f277a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6a4b895ae8e2031546e5144b5ca213fd = $(`<div id="html_6a4b895ae8e2031546e5144b5ca213fd" style="width: 100.0%; height: 100.0%;"><b>[4] 1861 SE 47th Ave, Hillsboro</b><br>Open: Sat 17 Oct 11:00AM-1:00PM<br>lot 6,970 sqft · built 2000 · $655,000<br>deck<br><a href="https://www.realtor.com/realestateandhomes-detail/1861-SE-47th-Ave_Hillsboro_OR_97129_M16276-53492" target="_blank">listing</a></div>`)[0];
+                popup_e1f82b18ebf950a6be2d0917828f277a.setContent(html_6a4b895ae8e2031546e5144b5ca213fd);
+            
+        
+
+        marker_881d4e47f1e40981c0dcf82e744efde3.bindPopup(popup_e1f82b18ebf950a6be2d0917828f277a)
+        ;
+
+        
+    
+    
+            marker_881d4e47f1e40981c0dcf82e744efde3.bindTooltip(
+                `<div>
+                     [4] 1861 SE 47th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
