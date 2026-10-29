@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b3b0bba789cc586f33ef3d636ae9bc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b3b0bba789cc586f33ef3d636ae9bc1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b3b0bba789cc586f33ef3d636ae9bc1 = L.map(
+                "map_9b3b0bba789cc586f33ef3d636ae9bc1",
+                {
+                    center: [45.390034, -122.734024],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41769f6964e6e29d257ea9abbc71bf66 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41769f6964e6e29d257ea9abbc71bf66.addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+            map_9b3b0bba789cc586f33ef3d636ae9bc1.fitBounds(
+                [[45.390034, -122.734024], [45.40806, -122.726313], [45.541824, -122.98365], [45.428085, -122.708818], [45.478344, -122.899033], [45.40691, -122.692192], [45.403887, -122.691307], [45.491794, -122.957861], [45.507042, -122.962852]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_42388f5377ba6bf6bef644bb649ca94f = L.marker(
+                [45.390034, -122.734024],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_f6a08e5891b0675dad9f7fc85b3482c8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_21dee7ba5dfb497caf5d8fffa4dadf74 = $(`<div id="html_21dee7ba5dfb497caf5d8fffa4dadf74" style="width: 100.0%; height: 100.0%;"><b>[16] 5711 McEwan Rd, Lake Oswego</b><br>Open: Sat 31 Oct 11:00AM-1:00PM<br>lot 10,019 sqft · built 1970 · $699,000<br>covered patio, deck, firepit, big yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/5711-McEwan-Rd_Lake-Oswego_OR_97035_M16512-51180" target="_blank">listing</a></div>`)[0];
+                popup_f6a08e5891b0675dad9f7fc85b3482c8.setContent(html_21dee7ba5dfb497caf5d8fffa4dadf74);
+            
+        
+
+        marker_42388f5377ba6bf6bef644bb649ca94f.bindPopup(popup_f6a08e5891b0675dad9f7fc85b3482c8)
+        ;
+
+        
+    
+    
+            marker_42388f5377ba6bf6bef644bb649ca94f.bindTooltip(
+                `<div>
+                     [16] 5711 McEwan Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_825587508752ce97c467c1e708cc0b76 = L.marker(
+                [45.40806, -122.726313],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_514ee69930f58c14be55a086e1dc1e40 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_96ceb9e40960b8dc97fe81f881d43ecb = $(`<div id="html_96ceb9e40960b8dc97fe81f881d43ecb" style="width: 100.0%; height: 100.0%;"><b>[10] 16200 Waluga Dr, Lake Oswego</b><br>Open: Sun 1 Nov 11:00AM-1:00PM<br>built 2021 · $1,665,000<br>covered patio, firepit, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/16200-Waluga-Dr_Lake-Oswego_OR_97035_M25905-13366" target="_blank">listing</a></div>`)[0];
+                popup_514ee69930f58c14be55a086e1dc1e40.setContent(html_96ceb9e40960b8dc97fe81f881d43ecb);
+            
+        
+
+        marker_825587508752ce97c467c1e708cc0b76.bindPopup(popup_514ee69930f58c14be55a086e1dc1e40)
+        ;
+
+        
+    
+    
+            marker_825587508752ce97c467c1e708cc0b76.bindTooltip(
+                `<div>
+                     [10] 16200 Waluga Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41ecb32537fc45aa41258f82f1609e93 = L.marker(
+                [45.541824, -122.98365],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_be8dfc7908538898a0196c3d15b1f5b1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b46f0432b13a9ddfc5be5f3c7dda4dce = $(`<div id="html_b46f0432b13a9ddfc5be5f3c7dda4dce" style="width: 100.0%; height: 100.0%;"><b>[10] 2258 NE Jamie Dr, Hillsboro</b><br>Open: Sun 1 Nov 12:00PM-2:00PM<br>lot 8,276 sqft · built 1993 · $795,000<br>covered patio, patio, porch, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/2258-NE-Jamie-Dr_Hillsboro_OR_97124_M24105-64231" target="_blank">listing</a></div>`)[0];
+                popup_be8dfc7908538898a0196c3d15b1f5b1.setContent(html_b46f0432b13a9ddfc5be5f3c7dda4dce);
+            
+        
+
+        marker_41ecb32537fc45aa41258f82f1609e93.bindPopup(popup_be8dfc7908538898a0196c3d15b1f5b1)
+        ;
+
+        
+    
+    
+            marker_41ecb32537fc45aa41258f82f1609e93.bindTooltip(
+                `<div>
+                     [10] 2258 NE Jamie Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dab3043b1ec771efb5d3b2ca67431fa1 = L.marker(
+                [45.428085, -122.708818],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_4162d816d8055fb4499836f6c925e9d7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_23a5213ef77f050dfea0e82c9238b3f8 = $(`<div id="html_23a5213ef77f050dfea0e82c9238b3f8" style="width: 100.0%; height: 100.0%;"><b>[9] 71 Tanglewood Dr, Lake Oswego</b><br>Open: Sat 31 Oct 12:00PM-2:00PM<br>lot 10,890 sqft · built 1972 · $880,000<br>deck, hot tub, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/71-Tanglewood-Dr_Lake-Oswego_OR_97035_M22981-99314" target="_blank">listing</a></div>`)[0];
+                popup_4162d816d8055fb4499836f6c925e9d7.setContent(html_23a5213ef77f050dfea0e82c9238b3f8);
+            
+        
+
+        marker_dab3043b1ec771efb5d3b2ca67431fa1.bindPopup(popup_4162d816d8055fb4499836f6c925e9d7)
+        ;
+
+        
+    
+    
+            marker_dab3043b1ec771efb5d3b2ca67431fa1.bindTooltip(
+                `<div>
+                     [9] 71 Tanglewood Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_76a5adefc7ccd4d74d2814fb662c4d7a = L.marker(
+                [45.478344, -122.899033],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_9a5f9abb7060e13b6d2707b7f99c1432 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1776e96db76e961660855ecf8c68b40a = $(`<div id="html_1776e96db76e961660855ecf8c68b40a" style="width: 100.0%; height: 100.0%;"><b>[8] 5741 SE 80th Ave, Hillsboro</b><br>Open: Sun 1 Nov 11:00AM-3:00PM<br>lot 6,098 sqft · built 2020 · $899,900<br>covered patio, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/5741-SE-80th-Ave_Hillsboro_OR_97129_M99714-35255" target="_blank">listing</a></div>`)[0];
+                popup_9a5f9abb7060e13b6d2707b7f99c1432.setContent(html_1776e96db76e961660855ecf8c68b40a);
+            
+        
+
+        marker_76a5adefc7ccd4d74d2814fb662c4d7a.bindPopup(popup_9a5f9abb7060e13b6d2707b7f99c1432)
+        ;
+
+        
+    
+    
+            marker_76a5adefc7ccd4d74d2814fb662c4d7a.bindTooltip(
+                `<div>
+                     [8] 5741 SE 80th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f320212f64acae4506bc83f7b689df8 = L.marker(
+                [45.40691, -122.692192],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_29a5bf1234e6ac568e4d29f767060161 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5b18cd1df7ec1ce4c84ce88f974d3f7d = $(`<div id="html_5b18cd1df7ec1ce4c84ce88f974d3f7d" style="width: 100.0%; height: 100.0%;"><b>[6] 1590 Woodland Ter, Lake Oswego</b><br>Open: Sat 31 Oct 11:00AM-1:00PM; Sun 1 Nov 12:00PM-3:00PM<br>built 1973 · $850,000<br>deck, patio<br><a href="https://www.realtor.com/realestateandhomes-detail/1590-Woodland-Ter_Lake-Oswego_OR_97034_M15908-89799" target="_blank">listing</a></div>`)[0];
+                popup_29a5bf1234e6ac568e4d29f767060161.setContent(html_5b18cd1df7ec1ce4c84ce88f974d3f7d);
+            
+        
+
+        marker_8f320212f64acae4506bc83f7b689df8.bindPopup(popup_29a5bf1234e6ac568e4d29f767060161)
+        ;
+
+        
+    
+    
+            marker_8f320212f64acae4506bc83f7b689df8.bindTooltip(
+                `<div>
+                     [6] 1590 Woodland Ter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff0011b7103ea45eaca7e8aa128994c9 = L.marker(
+                [45.403887, -122.691307],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_bde8bfe9f448774ce2715b1f19f118f4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_486694f5e37353f01fe49190794b114f = $(`<div id="html_486694f5e37353f01fe49190794b114f" style="width: 100.0%; height: 100.0%;"><b>[6] 1432 Greentree Cir, Lake Oswego</b><br>Open: Sun 1 Nov 1:00PM-3:00PM<br>lot 12,632 sqft · built 1977 · $1,049,000<br>deck, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/1432-Greentree-Cir_Lake-Oswego_OR_97034_M13706-38633" target="_blank">listing</a></div>`)[0];
+                popup_bde8bfe9f448774ce2715b1f19f118f4.setContent(html_486694f5e37353f01fe49190794b114f);
+            
+        
+
+        marker_ff0011b7103ea45eaca7e8aa128994c9.bindPopup(popup_bde8bfe9f448774ce2715b1f19f118f4)
+        ;
+
+        
+    
+    
+            marker_ff0011b7103ea45eaca7e8aa128994c9.bindTooltip(
+                `<div>
+                     [6] 1432 Greentree Cir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_866cc22a1fb3a6dbef6a25253f054fd5 = L.marker(
+                [45.491794, -122.957861],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_4fb5e72743be869a4d5a5da19ff7c73b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9993764c7cddef4322d37179f4971ca9 = $(`<div id="html_9993764c7cddef4322d37179f4971ca9" style="width: 100.0%; height: 100.0%;"><b>[5] 3702 SE Meier Ct, Hillsboro</b><br>Open: Sun 1 Nov 10:00AM-12:00PM<br>lot 9,583 sqft · built 1976 · $579,999<br>patio, fenced yard, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/3702-SE-Meier-Ct_Hillsboro_OR_97123_M18198-97300" target="_blank">listing</a></div>`)[0];
+                popup_4fb5e72743be869a4d5a5da19ff7c73b.setContent(html_9993764c7cddef4322d37179f4971ca9);
+            
+        
+
+        marker_866cc22a1fb3a6dbef6a25253f054fd5.bindPopup(popup_4fb5e72743be869a4d5a5da19ff7c73b)
+        ;
+
+        
+    
+    
+            marker_866cc22a1fb3a6dbef6a25253f054fd5.bindTooltip(
+                `<div>
+                     [5] 3702 SE Meier Ct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20111298807ca5aaa76ca10b849bca65 = L.marker(
+                [45.507042, -122.962852],
+                {
+}
+            ).addTo(map_9b3b0bba789cc586f33ef3d636ae9bc1);
+        
+    
+        var popup_b72be20e6599b2d44342c6ea5031eabc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_dd15b239c3828cc2763feb960eb3bcbe = $(`<div id="html_dd15b239c3828cc2763feb960eb3bcbe" style="width: 100.0%; height: 100.0%;"><b>[4] 1901 SE Minter Bridge Rd, Hillsboro</b><br>Open: Sat 31 Oct 1:00PM-3:00PM<br>built 1968 · $125,000<br>deck<br><a href="https://www.realtor.com/realestateandhomes-detail/1901-SE-Minter-Bridge-Rd-Unit-15_Hillsboro_OR_97123_M28807-03900" target="_blank">listing</a></div>`)[0];
+                popup_b72be20e6599b2d44342c6ea5031eabc.setContent(html_dd15b239c3828cc2763feb960eb3bcbe);
+            
+        
+
+        marker_20111298807ca5aaa76ca10b849bca65.bindPopup(popup_b72be20e6599b2d44342c6ea5031eabc)
+        ;
+
+        
+    
+    
+            marker_20111298807ca5aaa76ca10b849bca65.bindTooltip(
+                `<div>
+                     [4] 1901 SE Minter Bridge Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
