@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60a276e2874fafd4f4f9044b6a115187 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60a276e2874fafd4f4f9044b6a115187" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60a276e2874fafd4f4f9044b6a115187 = L.map(
+                "map_60a276e2874fafd4f4f9044b6a115187",
+                {
+                    center: [45.433285, -122.700354],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_deb3df4ad878e66e86e962edc576fa5f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_deb3df4ad878e66e86e962edc576fa5f.addTo(map_60a276e2874fafd4f4f9044b6a115187);
+        
+    
+            map_60a276e2874fafd4f4f9044b6a115187.fitBounds(
+                [[45.433285, -122.700354], [45.415094, -122.719241], [45.530586, -122.983932]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_9476ccc70a34f6d2c3c33a1200e0fd34 = L.marker(
+                [45.433285, -122.700354],
+                {
+}
+            ).addTo(map_60a276e2874fafd4f4f9044b6a115187);
+        
+    
+        var popup_338cdbf1f44178027090e75a0e4f333c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f6ba5c6d95c85794dbca222868016407 = $(`<div id="html_f6ba5c6d95c85794dbca222868016407" style="width: 100.0%; height: 100.0%;"><b>[9] 12735 SW 22nd Ave, Lake Oswego</b><br>Open: Sun 29 Nov 10:00AM-12:00PM<br>lot 15,682 sqft · built 1948 · $675,000<br>covered patio, patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/12735-SW-22nd-Ave_Lake-Oswego_OR_97034_M26811-82533" target="_blank">listing</a></div>`)[0];
+                popup_338cdbf1f44178027090e75a0e4f333c.setContent(html_f6ba5c6d95c85794dbca222868016407);
+            
+        
+
+        marker_9476ccc70a34f6d2c3c33a1200e0fd34.bindPopup(popup_338cdbf1f44178027090e75a0e4f333c)
+        ;
+
+        
+    
+    
+            marker_9476ccc70a34f6d2c3c33a1200e0fd34.bindTooltip(
+                `<div>
+                     [9] 12735 SW 22nd Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0f2b9c7ddc5756cf3b11bbe1c00d61c = L.marker(
+                [45.415094, -122.719241],
+                {
+}
+            ).addTo(map_60a276e2874fafd4f4f9044b6a115187);
+        
+    
+        var popup_e860f17ccec6e765c79c334d5e11e52c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0e7700e0e135e1c52a17be43b34e1ee6 = $(`<div id="html_0e7700e0e135e1c52a17be43b34e1ee6" style="width: 100.0%; height: 100.0%;"><b>[6] 4123 Harvey Way, Lake Oswego</b><br>Open: Sat 28 Nov 1:00PM-3:00PM; Sun 29 Nov 1:00PM-3:00PM<br>built 1981 · $725,000<br>private backyard, patio, fenced yard<br><a href="https://www.realtor.com/realestateandhomes-detail/4123-Harvey-Way_Lake-Oswego_OR_97035_M26334-06466" target="_blank">listing</a></div>`)[0];
+                popup_e860f17ccec6e765c79c334d5e11e52c.setContent(html_0e7700e0e135e1c52a17be43b34e1ee6);
+            
+        
+
+        marker_a0f2b9c7ddc5756cf3b11bbe1c00d61c.bindPopup(popup_e860f17ccec6e765c79c334d5e11e52c)
+        ;
+
+        
+    
+    
+            marker_a0f2b9c7ddc5756cf3b11bbe1c00d61c.bindTooltip(
+                `<div>
+                     [6] 4123 Harvey Way
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f199c67606feacb3cc35c5a142fdd25 = L.marker(
+                [45.530586, -122.983932],
+                {
+}
+            ).addTo(map_60a276e2874fafd4f4f9044b6a115187);
+        
+    
+        var popup_b4cdc090b92097f7f45a75ae04411e9b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c423304cb3dcf336350425c9b76dbb5a = $(`<div id="html_c423304cb3dcf336350425c9b76dbb5a" style="width: 100.0%; height: 100.0%;"><b>[4] 844 NE 4th Ave, Hillsboro</b><br>Open: Sat 28 Nov 12:00PM-2:00PM<br>lot 9,583 sqft · built 1939 · $550,000<br>patio, big lot<br><a href="https://www.realtor.com/realestateandhomes-detail/844-NE-4th-Ave_Hillsboro_OR_97124_M12841-10843" target="_blank">listing</a></div>`)[0];
+                popup_b4cdc090b92097f7f45a75ae04411e9b.setContent(html_c423304cb3dcf336350425c9b76dbb5a);
+            
+        
+
+        marker_3f199c67606feacb3cc35c5a142fdd25.bindPopup(popup_b4cdc090b92097f7f45a75ae04411e9b)
+        ;
+
+        
+    
+    
+            marker_3f199c67606feacb3cc35c5a142fdd25.bindTooltip(
+                `<div>
+                     [4] 844 NE 4th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
